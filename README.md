@@ -1,21 +1,21 @@
-# tatsuma/setup
+# murtatz/setup
 
-Public bootstrap entry point for setting up a fresh Mac to mirror tatsuma's
+Public bootstrap entry point for setting up a fresh Mac to mirror murtatz's
 personal-mac environment. Pulls the actual config from the private repo
-[tatsuma/dotfiles](https://github.com/tatsuma/dotfiles).
+[murtatz/dotfiles](https://github.com/murtatz/dotfiles).
 
 ## Quick start
 
 **One-line shortcut (self-responsibility):**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/tatsuma/setup/v1.0.0/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/murtatz/setup/v1.0.0/install.sh | bash
 ```
 
 **Recommended (review before exec):**
 
 ```bash
-curl -fsSL -o install.sh https://raw.githubusercontent.com/tatsuma/setup/v1.0.0/install.sh
+curl -fsSL -o install.sh https://raw.githubusercontent.com/murtatz/setup/v1.0.0/install.sh
 shasum -a 256 install.sh   # verify against published hash below
 less install.sh            # eyeball
 bash install.sh

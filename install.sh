@@ -3,7 +3,7 @@ set -euo pipefail
 
 cat <<'BANNER'
 ================================================
- murtatz/setup  v1.0.0
+ murtatz/setup  v1.0.1
  これから以下を実行します：
    1. Xcode Command Line Tools install
    2. Homebrew install

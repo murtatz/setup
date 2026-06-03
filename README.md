@@ -21,7 +21,7 @@ less install.sh            # eyeball
 bash install.sh
 ```
 
-**Published SHA256 (v1.0.1)**: `fe9c760c4ab9998bfcb7ab094cff8c0dcee97130bfbe952d303cc5af12efb44c`
+**Published SHA256 (v1.0.1)**: `88c15e4025eaad29029bf1f2859b26553f174d48e7f16a365a9c7548eadbf9fa`
 
 ## What it does
 

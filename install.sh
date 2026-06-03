@@ -3,14 +3,14 @@ set -euo pipefail
 
 cat <<'BANNER'
 ================================================
- tatsuma/setup  v1.0.0
+ murtatz/setup  v1.0.0
  これから以下を実行します：
    1. Xcode Command Line Tools install
    2. Homebrew install
    3. brew install gh chezmoi
    4. Claude Code install
    5. gh auth login (ブラウザ)
-   6. chezmoi init --apply tatsuma/dotfiles (private)
+   6. chezmoi init --apply murtatz/dotfiles (private)
  不審な場合は Ctrl-C を 5 秒以内に。
 ================================================
 BANNER
@@ -47,7 +47,7 @@ if ! gh auth status &>/dev/null; then
 fi
 
 # 6. chezmoi init (HTTPS uses gh credential helper → private repo OK)
-chezmoi init --apply --verbose tatsuma/dotfiles
+chezmoi init --apply --verbose murtatz/dotfiles
 
 cat <<'NEXT'
 ================================================

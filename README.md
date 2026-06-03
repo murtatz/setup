@@ -9,19 +9,19 @@ personal-mac environment. Pulls the actual config from the private repo
 **One-line shortcut (self-responsibility):**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/murtatz/setup/v1.0.0/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/murtatz/setup/v1.0.1/install.sh | bash
 ```
 
 **Recommended (review before exec):**
 
 ```bash
-curl -fsSL -o install.sh https://raw.githubusercontent.com/murtatz/setup/v1.0.0/install.sh
+curl -fsSL -o install.sh https://raw.githubusercontent.com/murtatz/setup/v1.0.1/install.sh
 shasum -a 256 install.sh   # verify against published hash below
 less install.sh            # eyeball
 bash install.sh
 ```
 
-**Published SHA256 (v1.0.0)**: `c8bca98d10bd770c2439ee8004d3e28728044b13819ddf20cc4543faeb136c65`
+**Published SHA256 (v1.0.1)**: `fe9c760c4ab9998bfcb7ab094cff8c0dcee97130bfbe952d303cc5af12efb44c`
 
 ## What it does
 
@@ -32,13 +32,13 @@ bash install.sh
 3. `brew install gh chezmoi`
 4. Claude Code install
 5. `gh auth login` (browser-based OAuth)
-6. `chezmoi init --apply tatsuma/dotfiles`
+6. `chezmoi init --apply murtatz/dotfiles`
 
 After completion: open `claude` and run `/setup-mac apply` for the rest of setup.
 
 ## Hardening
 
-- Pinned to release tag, not `main` (URL above uses `v1.0.0`)
+- Pinned to release tag, not `main` (URL above uses `v1.0.1`)
 - All commits to `main` are signed and require PR review
 - Branch protection enforced
 - 5-second banner with cancellation window before any action
@@ -46,5 +46,5 @@ After completion: open `claude` and run `/setup-mac apply` for the rest of setup
 
 ## Do not put secrets here
 
-This repo is public. The actual config lives in `tatsuma/dotfiles` (private).
+This repo is public. The actual config lives in `murtatz/dotfiles` (private).
 Secrets stay in 1Password (SSH agent + `op run` for runtime).

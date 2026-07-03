@@ -34,7 +34,14 @@ bash install.sh
 5. `gh auth login` (browser-based OAuth)
 6. `chezmoi init --apply murtatz/dotfiles`
 
-After completion: open `claude` and run `/setup-mac apply` for the rest of setup.
+After completion: open `claude` and run `/setup-mac apply` for the rest of setup
+(brew bundle, runtimes, Claude Code plugins, `products-sync clone`, skill symlinks,
+memory seed, doctor).
+
+**Full reproduction guide** — repos, the `~/.claude/skills` symlink farm, and
+work/company-machine caveats — lives in `INSTALL.md` inside the private
+`murtatz/dotfiles` repo (kept private because it documents personal-account and
+1Password specifics).
 
 ## Hardening
 
